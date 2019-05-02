@@ -441,8 +441,8 @@ auto_night_mode(){
 
 # Take a snapshot
 snapshot(){
-    filename="/tmp/snapshot.jpg"
-    /system/sdcard/bin/getimage > "$filename" &
+    snapshot_filename=$(date +"%m-%d-%Y_%H.%M.%S")
+    /system/sdcard/bin/getimage > "/system/media/nas/${snapshot_filename}.jpg" &
     sleep 1
 }
 

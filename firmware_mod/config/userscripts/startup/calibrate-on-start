@@ -1,0 +1,2 @@
+#!/bin/sh
+/system/sdcard/bin/motor -d v -s 100
